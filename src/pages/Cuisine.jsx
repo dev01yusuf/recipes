@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { motion } from "framer-motion";
-import { Link, useParams } from "react-router-dom";
+import {   useParams } from "react-router-dom";
 
 
 function Cuisine() {
@@ -16,7 +16,6 @@ function Cuisine() {
       const recipes = await data.json();
     setCuisine(recipes.results);
   };
-  
   useEffect(() => {
     getCuisine(params.type)
     console.log(params.type)
