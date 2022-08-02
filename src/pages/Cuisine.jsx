@@ -16,6 +16,7 @@ function Cuisine() {
       const recipes = await data.json();
     setCuisine(recipes.results);
   };
+  
   useEffect(() => {
     getCuisine(params.type)
     console.log(params.type)
